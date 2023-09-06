@@ -1,0 +1,6 @@
+matplotlib
+pynwb
+dandi
+cloud-volume
+intern
+fsspec
