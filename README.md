@@ -4,3 +4,8 @@ We propose continued secondary analysis of the MICrONS dataset, including the da
 
 If successful, this work will generate novel insight into the stimulus-dependent and time-dependent activation of functional subnetworks. This will also allow direct investigation of causal connectivity estimation using functional data. Follow on work could investigate improvements to functional connectivity estimation methods. Even more exciting, however, is the potential to generate a wide range of hypotheses relating the structure and function of neural networks within mammalian cortex.
 
+## How to run
+
+1. Install python requirements from `requirements.txt`
+2. Run `microns_nwb_coreg_demo` notebook for demo 
+3. Import `microns_nwb_coreg` script functions for your own use-case!
