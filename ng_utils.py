@@ -13,6 +13,7 @@ nucleus_neuron_svm = client.materialize.live_query('nucleus_neuron_svm', timesta
 MINNIE_RESOLUTION = np.array([4,4,40])
 
 def generate_functional_ng_state(unit_info, table = apl_functional_coreg_forward_v5):
+    unit_info = [int(x) for x in unit_info]
     ref_ng_state = json.load(open('ng_visualization/functional_base_state.json','r'))
     fields = ref_ng_state['layers'][1]['source']
     base_url = 'precomputed://s3://bossdb-open-data/iarpa_microns/minnie/functional_data/field_seg_masks/'
