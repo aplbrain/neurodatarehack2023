@@ -47,7 +47,7 @@ def generate_functional_ng_state(unit_info, table = apl_functional_coreg_forward
     ref_ng_state['layers'].extend([gen_compact_roi_layer(fields)])
     session_id, scan_id, field_id, unit_field_id = unit_info
     unit_id_row = table[(table['session']==session_id)&(table['field'] == field_id)&(table['scan_idx']==scan_id)&(table['unit_id'] == unit_field_id)].iloc[0]
-    field_obj = fields[unit_id_row['field']].copy()
+    field_obj = fields[unit_id_row['field']-1].copy()
     ref_ng_state['position'] = list(np.array(field_obj['transform']['matrix'])[:,-1])
     ref_ng_state['layers'].extend([get_roi_layer(field_obj, unit_field_id=unit_field_id)])
 
