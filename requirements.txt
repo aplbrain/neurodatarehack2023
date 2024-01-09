@@ -4,3 +4,6 @@ dandi
 cloud-volume
 intern
 fsspec
+tqdm
+caveclient
+pandas
